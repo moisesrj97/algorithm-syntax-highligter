@@ -1,0 +1,12 @@
+.const-def{
+    color: tomato; 
+}
+.const-name{
+    color: #f0f;
+}
+.const-type{
+    color: rgb(0, 89, 255);
+}
+.comment-curly{
+    color: rgba(128, 128, 128, 0.815)
+}
