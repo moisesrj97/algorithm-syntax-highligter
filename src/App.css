@@ -1,12 +1,59 @@
-.const-def{
-    color: tomato; 
+.definition, .type-def-block {
+    font-weight: bold;
+}  
+
+.constant {
+    font-weight: bold;
+    color: #aa00ff;
 }
-.const-name{
-    color: #f0f;
+
+.type {
+    font-weight: bold;
+    color: #00c46f;
 }
-.const-type{
-    color: rgb(0, 89, 255);
+
+.comment {
+    font-style: italic;
+    color: #888888;
 }
-.comment-curly{
-    color: rgba(128, 128, 128, 0.815)
+
+.comment-line {
+    font-style: italic;
+    color: #888888;
+}
+
+.string {
+    color: #008000;
+}
+
+.number {
+    color: #0000ff;
+}
+
+.type-def {
+    font-weight: bold;
+    color: #00c46f;
+}
+
+.special-function {
+    font-weight: bold;
+    color: #0000ff;
+}
+
+.operator {
+    color: #d38d00;
+}
+
+.boolean {
+    color: #3ec500;
+}
+
+.keyword {
+    font-weight: bolder;
+    color: #ba3b00;
+}
+
+textarea {
+    border: 1px solid #383838 !important;
+    border-radius: 5px;
 }
