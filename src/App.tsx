@@ -40,16 +40,34 @@ function App() {
   return (
     <>
       <h1>Insert algorithm</h1>
-      <Editor
-        value={code}
-        onValueChange={code => setCode(code)}
-        highlight={code => Prism.highlight(code, Prism.languages.your_language, 'your_language')}
-        padding={10}
-        style={{
-          fontFamily: '"Fira code", "Fira Mono", monospace',
-          fontSize: 12,
-        }}
-      />
+      <div style={{ display: 'relative', width: "100%" }}>
+        <div className='line-count'>
+          {code.split('\n').map((_, i) => (
+            <div key={i}>{i + 1}</div>
+          ))}
+        </div>
+        <Editor
+          value={code}
+          onValueChange={code => setCode(code)}
+          highlight={code =>
+            Prism.highlight(
+              code,
+              Prism.languages.your_language,
+              'your_language'
+            )
+          }
+          padding={{
+              top: 10,
+              right: 20,
+              bottom: 10,
+              left: 60,
+          }}
+          style={{
+            fontFamily: '"Fira code", "Fira Mono", monospace',
+            fontSize: 12,
+          }}
+        />
+      </div>
     </>
   );
 }

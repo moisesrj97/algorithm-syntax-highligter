@@ -57,3 +57,12 @@ textarea {
     border: 1px solid #383838 !important;
     border-radius: 5px;
 }
+
+.line-count {
+    padding-top: 10px;
+    padding-left: 5px;
+    color: #888888;
+    font-family: "Fira code", "Fira Mono", monospace;
+    font-size: 12px;
+    position: absolute;
+}
