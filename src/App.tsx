@@ -22,6 +22,8 @@ Prism.languages.your_language = {
     /\bconst\b|\bend\s+const\b/,
     /\bvar\b|\bend\s+var\b/,
     /\balgorithm\b|\bend\s+algorithm\b/,
+    /\baction\b|\bend\s+action\b/,
+    /\bfunction\b|\bend\s+function\b/,
   ],
   'keyword': /\b(?:for|while|do|end for|end while|if|then|else|end if)\b/,
   'constant': /\b[A-Z_]+\b/,
@@ -30,17 +32,17 @@ Prism.languages.your_language = {
   'type': /(integer|real|boolean|char|vector|string)/,
   'type-def': /\b(?:t|T)[A-Z][a-zA-Z]*\b/,
 
-  'operator': /:=|<=|>=|<|>|=|≤|≠|≥|\+|-|\*|\/|\^|mod|and|or|not/,
+  'operator': /:=|<=|>=|<|>|=|≤|≠|≥|\+|-|\*|\/|\^|mod|and|or|not|return/,
   'boolean': /\b(true|false)\b/,
 };
 
 function App() {
-  const [code, setCode] = useState("");
+  const [code, setCode] = useState('');
 
   return (
     <>
       <h1>Insert algorithm</h1>
-      <div style={{ display: 'relative', width: "100%" }}>
+      <div style={{ display: 'relative', width: '100%' }}>
         <div className='line-count'>
           {code.split('\n').map((_, i) => (
             <div key={i}>{i + 1}</div>
@@ -57,10 +59,10 @@ function App() {
             )
           }
           padding={{
-              top: 10,
-              right: 20,
-              bottom: 10,
-              left: 60,
+            top: 10,
+            right: 20,
+            bottom: 10,
+            left: 60,
           }}
           style={{
             fontFamily: '"Fira code", "Fira Mono", monospace',
