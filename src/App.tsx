@@ -12,6 +12,8 @@ Prism.languages.your_language = {
       'type-def': /\b(?:t|T)[A-Z][a-zA-Z]*\b/,
       'comment': /\{.*?\}/,
       'comment-line': /\/\/.*/,
+      'type': /(integer|real|boolean|char|vector|string)/,
+      'definition': /\brecord\b|\bend\s+record\b/,
     },
   },
   'comment': /\{.*?\}/,

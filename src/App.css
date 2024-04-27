@@ -1,68 +1,69 @@
-.definition, .type-def-block {
-    font-weight: bold;
-}  
+.definition,
+.type-def-block {
+  font-weight: bold;
+}
 
 .constant {
-    font-weight: bold;
-    color: #aa00ff;
+  font-weight: bold;
+  color: #aa00ff;
 }
 
 .type {
-    font-weight: bold;
-    color: #00c46f;
+  font-weight: bold;
+  color: #00c46f;
 }
 
 .comment {
-    font-style: italic;
-    color: #888888;
+  font-style: italic;
+  color: #888888;
 }
 
 .comment-line {
-    font-style: italic;
-    color: #888888;
+  font-style: italic;
+  color: #888888;
 }
 
 .string {
-    color: #008000;
+  color: #008000;
 }
 
 .number {
-    color: #0000ff;
+  color: #0000ff;
 }
 
 .type-def {
-    font-weight: bold;
-    color: #00c46f;
+  font-weight: bold;
+  color: #00c46f;
 }
 
 .special-function {
-    font-weight: bold;
-    color: #0000ff;
+  font-weight: bold;
+  color: #0000ff;
 }
 
 .operator {
-    color: #d38d00;
+  color: #d38d00;
 }
 
 .boolean {
-    color: #3ec500;
+  color: #3ec500;
 }
 
 .keyword {
-    font-weight: bolder;
-    color: #ba3b00;
+  font-weight: bolder;
+  color: #ba3b00;
 }
 
 textarea {
-    border: 1px solid #383838 !important;
-    border-radius: 5px;
+  border: 1px solid #383838 !important;
+  border-radius: 5px;
 }
 
 .line-count {
-    padding-top: 10px;
-    padding-left: 5px;
-    color: #888888;
-    font-family: "Fira code", "Fira Mono", monospace;
-    font-size: 12px;
-    position: absolute;
+  padding-top: 10px;
+  padding-left: 5px;
+  color: #888888;
+  font-family: 'Fira code', 'Fira Mono', monospace;
+  font-size: 12px;
+  position: absolute;
 }
